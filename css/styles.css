@@ -6,6 +6,11 @@ body {
 hr {
 	color: #ffffff;
 }
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	line-height: 1.5;
+}
 #title {
 	background-color: #ff4c68;
 }
@@ -30,18 +35,18 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 .container-fluid {
-	padding: 3% 15%;
+	padding: 3% 15% 7%;
 }
 .download-button {
 	margin: 5% 3% 5% 0;
 }
 
 .content-img {
-	padding-left: 100px;
+	padding-left: 30px;
 }
 .title-img {
-	transform: rotate(1.05turn);
-	width: 60%;
+	transform: rotate(0.05turn);
+	position: absolute;
 }
 
 /* features section */
@@ -49,7 +54,11 @@ font-family: 'Ubuntu', sans-serif; */
 #features {
 	text-align: center;
 	line-height: 2;
+	padding: 10% 15%;
+	background-color: white;
+	position: relative;
 }
+
 #features i {
 	color: #ef8172;
 }
@@ -62,4 +71,100 @@ font-family: 'Ubuntu', sans-serif; */
 }
 #features p {
 	color: #8f8f8f;
+}
+
+/* Testamonial Section */
+
+#testimonials {
+	text-align: center;
+	background-color: #ef8172;
+	color: #ffffff;
+}
+
+.testimonials-img {
+	width: 10%;
+	border-radius: 100%;
+	margin: 20px;
+}
+
+.carousel-item {
+	padding: 5% 15%;
+}
+
+/* Press */
+
+#press {
+	background-color: #ef8172;
+	text-align: center;
+	padding: 3%;
+}
+
+.press-logo {
+	width: 15%;
+	margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+	padding: 5% 0 0;
+	text-align: center;
+}
+#pricing .row {
+	--bs-gutter-x: 0px;
+}
+.pricing-column {
+	padding: 5px;
+}
+
+.card-footer {
+	border-top: 0;
+}
+
+#pricing button {
+	width: 100%;
+	padding: 1rem;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Contact */
+#cta {
+	text-align: center;
+	line-height: 3;
+	padding: 5% 15% 8%;
+	background-color: #ff4c68;
+}
+#cta h3 {
+	font-size: 3rem;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+/* Footer */
+#footer {
+	text-align: center;
+	padding: 5% 0% 1%;
+}
+#footer i {
+	margin: 0px 10px 10px;
+}
+/* Media Queries */
+
+@media (max-width: 1028px) {
+	.title-img {
+		position: static;
+		transform: rotate(0turn);
+	}
+	.content-img {
+		padding-left: 0px;
+	}
+	#title {
+		text-align: center;
+	}
+	#pricing {
+		text-align: center;
+	}
+	#cta {
+		text-align: center;
+	}
 }
